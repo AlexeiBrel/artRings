@@ -1,0 +1,139 @@
+.modal {}
+
+.modal.open .modal-overlay,
+.modal.open .modal-window {
+    opacity: 1;
+    z-index: 10;
+}
+
+.modal.hide .modal-overlay,
+.modal.hide .modal-window {
+    opacity: 1;
+    z-index: 10;
+}
+
+.modal.open .modal-window {
+    transform: translateY(100px);
+}
+
+.modal.open .modal-overlay {
+    background: rgba(0, 0, 0, 0.9);
+}
+
+.modal.hide .modal-window {
+    transform: translateY(-200px);
+}
+
+.modal.hide .modal-overlay {
+    background: rgba(0, 0, 0, 0);
+}
+
+.modal-overlay,
+.modal-window {
+    opacity: 0;
+    z-index: -1;
+}
+
+.modal-overlay {
+    position: fixed;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0);
+    padding: 0 25px;
+    transition: background.3s ease-in;
+}
+
+.modal-window {
+    padding: 20px 10px;
+    margin: 0 auto;
+    background: #fff;
+    max-width: 350px;
+    width: 100%;
+    border-radius: 10px;
+    position: relative;
+    transform: translateY(-200px);
+    transition: all.3s ease-in;
+}
+
+.modal-header .modal-title {
+    color: rgb(65, 65, 65);
+    font-size: 20px;
+    font-weight: normal;
+    line-height: 1;
+    margin: 0;
+}
+
+.modal .modal-close {
+    color: rgb(255, 255, 255);
+    cursor: pointer;
+    font-size: 16px;
+    text-decoration: none;
+    position: absolute;
+    right: -5px;
+    top: -10px;
+    background: rgb(0, 0, 0);
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    transition: all.3s ease;
+}
+
+.modal .modal-close:hover {
+    color: rgb(255, 93, 93);
+}
+
+.modal-body {
+    padding: 15px 0;
+}
+
+.modal-body p {
+    padding: 5px 0;
+    letter-spacing: 0.02em;
+    font-size: 18px;
+    color: rgb(65, 65, 65);
+}
+
+.modal-footer {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.btn {
+    background: #fff;
+    border: #555 solid 1px;
+    border-radius: 3px;
+    cursor: pointer;
+    display: inline-block;
+    font-size: 14px;
+    padding: 5px 15px;
+    text-decoration: none;
+    text-align: center;
+    min-width: 60px;
+    position: relative;
+    transition: all.3s ease;
+}
+
+.btn:hover,
+.btn:focus {
+    background: #f2f2f2;
+}
+
+.btn:nth-child(1) {
+    margin-right: 15px;
+}
+
+.btn {
+    background: #428bca;
+    border-color: #357ebd;
+    color: #fff;
+}
+
+.btn:hover {
+    background: #074983;
+}

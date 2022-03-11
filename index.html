@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Art-Rings</title>
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/swiper-bundle.min.css">
+    <link rel="stylesheet" href="css/index.css">
+</head>
+
+<body>
+    <div class="wrapper">
+        <header class="header">
+            <div class="header__content">
+                <div class="burger-menu">
+                    <input id="menu-toggle" type="checkbox" />
+                    <label class="menu-btn" for="menu-toggle">
+                        <span></span>
+                    </label>
+                    <nav class="menubox">
+                        <img src="img/icons/logoMenu.svg" alt="MenuLogo">
+                        <ul>
+                            <li><a class="menu-item" href="#">О нас</a></li>
+                            <li><a class="menu-item" href="#">Доставка и оплата</a></li>
+                            <li><a class="menu-item" href="#">Гарантии</a></li>
+                            <li><a class="menu-item" href="#">Контакты</a></li>
+                        </ul>
+                    </nav>
+                </div>
+                <div class="header__item header__logo">
+                    <img src="/img/icons/logo.svg" alt="Logo">
+                </div>
+                <div class="header__button">
+                    <a href="##" class="user"></a>
+                    <a href="##" class="cart"></a>
+                </div>
+            </div>
+        </header>
+        <main class="main">
+            <div class="card__content">
+                <h3 class="card__title">Ваш заказ</h3>
+                <div class="card__body">
+                    <p data-cart-empty class="cartEmpty">Простите, ваша корзина пуста</p>
+                    <div class="card-wrapper">
+
+                    </div>
+                    <div class="card__total">
+                        <p>Итого: </p><span class="total-price">0 руб</span>
+                    </div>
+                    <form action="#" id="order-form" class="card__checkout none">
+                        <h3>Оформить заказ</h3>
+                        <input type="text" placeholder="+375 (__) ___-__-__">
+                        <button type="button" class="order__btn">Заказать</button>
+                    </form>
+
+                </div>
+            </div>
+            <div class="auto__form hidden form">
+                <form class="auto__body form__body" action="POST">
+                    <h2 class="form__title">Авторизация</h2>
+
+                    <div class="input__error form_grup">
+                        <input id="autoEmail" class="autoEmail form_input" placeholder=" " type="text">
+                        <label for="autoEmail" class="form_label">Email</label>
+                    </div>
+                    <div class="input__error form_grup">
+                        <input id="autoPwd" class="autoPwd form_input" placeholder=" " type="password">
+                        <label for="autoPwd" class="form_label">Пароль</label>
+                    </div>
+                    <button class="btnReg form_button" id="btnAutoForm" type="button">Авторизоваться</button>
+                    <button class="singUp form_button" id="singUp" type="button">Регистрация</button>
+                </form>
+            </div>
+            <div class="reg__form hidden form">
+                <form class="reg__body form__body" action="POST">
+                    <h2 class="form__title">Регистрация</h2>
+
+                    <div class="input__error form_grup">
+                        <input id="regEmail" class="regEmail form_input" placeholder=" " type="text">
+                        <label for="regEmail" class="form_label">Email</label>
+                    </div>
+                    <div class="input__error form_grup">
+                        <input id="regName" class="regName form_input" placeholder=" " type="text">
+                        <label for="regName" class="form_label">Имя</label>
+                    </div>
+                    <div class="input__error form_grup">
+                        <input id="regTel" class="regTel form_input" placeholder=" " type="tel">
+                        <label for="regTel" class="form_label">Телефон</label>
+                    </div>
+                    <div class="input__error form_grup">
+                        <input id="regPwd" class="regPwd form_input" maxlength="18" placeholder=" " type="password">
+                        <label for="regPwd" class="form_label">Пароль</label>
+                    </div>
+                    <div class="input__error form_grup">
+                        <input id="regRepPwd" class="regRepPwd form_input" maxlength="18" placeholder=" " type="password">
+                        <label for="regRepPwd" class="form_label">Пароль</label>
+                    </div>
+                    <div class="checkbox">
+                        <input id="formAgreement" type="checkbox">
+                        <label class="checkLabel" for="formAgreement">Я ознакомлен с </label><a href="#" class="link__condition" onclick="checkCondition()">Условием</a>
+                    </div>
+                    <button class="btnReg form_button" id="btnRegForm" type="button">Зарегистрироваться</button>
+                </form>
+            </div>
+            <section class="hero">
+                <h2>Oсобенные обручальные кольца</h2>
+                <div class="swiper mySwiper">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <img src="img/slider/item1.jpg" alt="">
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="img/slider/item2.jpg" alt="">
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="img/slider/item3.jpg" alt="">
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="img/slider/item4.jpg" alt="">
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="img/slider/item5.jpg" alt="">
+                        </div>
+                    </div>
+                    <div class="swiper-pagination"></div>
+                </div>
+            </section>
+            <section class="catalog">
+                <div class="catalog__briliant">
+                    <hr>
+                    <img src="/img/icons/briliant.svg" alt="">
+                    <hr>
+                </div>
+                <div class="catalog__content">
+                    <h2>каталог</h2>
+                    <div id="catalog" class="catalog__block"></div>
+                </div>
+            </section>
+            <section class="product">
+                <div class="product__content">
+                    <h2>НОВИНКИ</h2>
+                    <div class="product__block" id="product"></div>
+                </div>
+            </section>
+        </main>
+        <footer class="footer">
+            <div class="footer__content">
+                <div class="footer__item">
+                    <h2>ИНФОРМАЦИЯ</h2>
+                    <ul>
+                        <li> <a href="##">Студия</a></li>
+                        <li> <a href="##">О нас</a></li>
+                        <li> <a href="##">Доставка и Оплата</a></li>
+                        <li> <a href="##">Гарантии</a></li>
+                    </ul>
+                </div>
+                <div class="footer__item">
+                    <h2>ПОКУПАТЕЛЯМ</h2>
+                    <ul>
+                        <li> <a href="##">Бриллиант в падарок</a> </li>
+                        <li> <a href="##">Как выбрать обручальные кольца</a> </li>
+                        <li> <a href="##">О помолвочных кольцах</a> </li>
+                    </ul>
+                </div>
+                <div class="footer__item">
+                    <h2>АССОРТИМЕНТ</h2>
+                    <ul>
+                        <li> <a href="##">Все обручальные кольца</a> </li>
+                        <li> <a href="##">Необычные обручальные кольца</a> </li>
+                        <li> <a href="##">Кольца с лебедями</a> </li>
+                        <li> <a href="##">Классические обручальные кольца</a> </li>
+                    </ul>
+                </div>
+                <div class="footer__item">
+                    <h2>КОНТАКТЫ</h2>
+                    <p>+375(33) 680 35 01</p>
+                    <p>info@art-rings.ru</p>
+                </div>
+            </div>
+        </footer>
+    </div>
+
+    <script src="js/jquery.min.js"></script>
+    <script src="js/jquery.maskedinput.min.js"></script>
+    <script src="js/valid.js"></script>
+    <script src="components/catalog-item/cart-item.js"></script>
+    <script src="components/catalog-item/catalog-item.js"></script>
+    <script src="js/swiper-bundle.min.js"></script>
+    <script src="js/counter.js"></script>
+    <script src="js/cart.js"></script>
+    <script src="js/toogleCartStatus.js"></script>
+    <script src="/js/cartCalcPrice.js"></script>
+    <script src="js/main.js"></script>
+    <script>
+        var swiper = new Swiper(".mySwiper", {
+            spaceBetween: 30,
+            centeredSlides: true,
+            autoplay: {
+                delay: 2500,
+                disableOnInteraction: false,
+            },
+            pagination: {
+                el: ".swiper-pagination",
+                clickable: true,
+                dynamicBullets: true,
+            },
+            navigation: {
+                nextEl: ".swiper-button-next",
+                prevEl: ".swiper-button-prev",
+            },
+        });
+    </script>
+</body>
+
+</html>

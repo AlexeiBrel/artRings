@@ -1,0 +1,283 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway&family=Spartan:wght@400;500&display=swap');
+@import "_modal.scss";
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    min-height: 100%;
+    max-width: 1024px;
+    margin: 0 auto;
+}
+
+.hidden {
+    opacity: 0;
+    visibility: hidden;
+}
+
+@import "_header.scss";
+.header .header__button .user {
+    margin-right: 10px;
+    background: url(../img/icons/door.svg) center no-repeat;
+    background-size: contain;
+}
+
+.main {
+    padding: 0 10px;
+}
+
+.main .main__hero {
+    min-height: 100vh;
+    max-width: 1366px;
+    width: 100%;
+    text-align: center;
+    background: #FAFBFF;
+    margin: 20px auto;
+    padding: 0;
+}
+
+.main .main__hero .hero__block {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    grid-gap: 30px;
+    align-items: center;
+    justify-content: space-around;
+    margin-top: 50px;
+}
+
+.main .main__hero .about {
+    width: 100%;
+    padding: 20px 10px;
+    // box-shadow: 0 16px 20px rgb(0 0 0 / 10%), 0 0 20px rgb(0 0 0 / 10%);
+    border-radius: 12px;
+    background-color: #fff;
+    height: 220px;
+    background-image: linear-gradient( 94.18deg, #fae1f3 .59%, #d9f1ff 98.87%);
+}
+
+.main .main__hero .main__about .content__profile {
+    display: flex;
+    align-items: center;
+}
+
+.main .main__hero .main__about .content__profile p {
+    margin-left: 20px;
+    font-size: 20px;
+    line-height: 28px;
+    font-weight: 400;
+    color: rgb(66, 66, 66);
+    font-weight: 700;
+}
+
+.main .main__hero .main__about .content__contact {
+    text-align: left;
+    font-size: 16px;
+    line-height: 22px;
+    color: #4d4d4d;
+    font-weight: 400;
+}
+
+.main .main__hero .main__about .content__contact p {
+    font-size: 20px;
+    letter-spacing: 0.06em;
+}
+
+.main .main__hero .main__about .content__contact span {
+    margin-left: 10px;
+    color: #000;
+    font-size: 18px;
+}
+
+.main .main__hero .main__about .content__contact .contact__phone {
+    display: flex;
+    margin: 15px 0;
+}
+
+.main .main__hero .main__about .content__contact .contact__email {
+    display: flex;
+}
+
+.main .main__hero .change__pwd .change__block {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.main .main__hero .hero__block .change__pwd {
+    padding: 10px 20px;
+}
+
+.main .main__hero .change__pwd .change__block input {
+    width: 100%;
+    margin-top: 15px;
+    height: 35px;
+    border-radius: 12px;
+    border: none;
+    padding: 0 10px;
+}
+
+.main .main__hero .change__pwd .change__block .changePwd {
+    line-height: 1.1;
+    letter-spacing: 1px;
+    font-weight: 700;
+    text-align: center;
+    position: relative;
+    display: inline-block;
+    vertical-align: top;
+    border-radius: 8px;
+    cursor: pointer;
+    text-decoration: none;
+    color: #fff;
+    background-color: #cb11ab;
+    border: 2px solid #cb11ab;
+    font-size: 18px;
+    padding: 7px 15px;
+    margin-top: 10px;
+    width: 100%;
+    transition: all.22s ease-in-out;
+}
+
+.main .main__hero .change__pwd .change__block .changePwd:hover {
+    background-color: #cb11aca2;
+    border: 2px solid #cb11aca2;
+}
+
+.main .main__hero .main__discounts {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.main .main__hero .main__discounts div {
+    display: flex;
+    align-items: center;
+}
+
+.main .main__hero .main__discounts div .discounts {
+    width: 80px;
+    height: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 20px;
+    line-height: 28px;
+    font-weight: 700;
+    border-radius: 50%;
+    border: 4px solid #ffeafa;
+    color: #cb11ab;
+}
+
+.main .main__hero .main__discounts div .discounts__text {
+    margin-left: 15px;
+    color: #cb11ab;
+    font-size: 20px;
+    line-height: 28px;
+    font-weight: 700;
+}
+
+.main .main__hero .main__discounts .ransom__mount {
+    margin-top: 80px;
+    font-size: 20px;
+    letter-spacing: 0.06em;
+}
+
+.main .main__hero .main__discounts .ransom__mount span {
+    font-size: 20px;
+    line-height: 22px;
+    font-weight: 700;
+    color: #000;
+    margin-left: 8px;
+}
+
+.main .main__hero .main__purchases {
+    padding: 20px 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
+.main .main__hero .main__purchases h2 {
+    font-size: 26px;
+    line-height: 28px;
+    font-weight: 400;
+    color: rgb(66, 66, 66);
+    letter-spacing: 1.5px;
+    font-weight: 700;
+    margin: 0;
+}
+
+.main .main__hero .main__purchases p {
+    font-size: 22px;
+    line-height: 28px;
+    font-weight: 400;
+    margin: 20px 0;
+    color: #4d4d4d;
+    letter-spacing: 1px;
+}
+
+.main .main__hero .main__ask {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px 20px;
+}
+
+.main .main__hero .main__ask textarea {
+    height: 100px;
+    border: none;
+    border-radius: 12px;
+    width: 100%;
+    margin-top: 10px;
+    padding: 5px 10px;
+    resize: none;
+    font-size: 18px;
+}
+
+.main .main__hero .main__ask .ask__btn {
+    line-height: 1.1;
+    letter-spacing: 1px;
+    font-weight: 700;
+    text-align: center;
+    position: relative;
+    display: inline-block;
+    vertical-align: top;
+    border-radius: 8px;
+    cursor: pointer;
+    text-decoration: none;
+    color: #fff;
+    background-color: #cb11ab;
+    border: 2px solid #cb11ab;
+    font-size: 18px;
+    padding: 7px 15px;
+    width: 100%;
+    -webkit-transition: all 0.22s ease-in-out;
+    transition: all 0.22s ease-in-out;
+    margin-top: 25px;
+}
+
+.main .main__hero .main__ask .ask__btn:hover {
+    background-color: #cb11aca2;
+    border: 2px solid #cb11aca2;
+}
+
+.main .main__hero .main__ask h2 {
+    font-size: 26px;
+    line-height: 28px;
+    font-weight: 400;
+    color: rgb(66, 66, 66);
+    letter-spacing: 1.5px;
+    font-weight: 700;
+    margin: 0;
+}
+
+@import "_footer.scss";
+@media all and(max-width: 690px) {
+    .main .main__hero .hero__block {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+        grid-gap: 15px;
+        align-items: center;
+        justify-content: space-around;
+        margin-top: 50px;
+    }
+}

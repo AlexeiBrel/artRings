@@ -1,0 +1,163 @@
+.card__content {
+    max-width: 388px;
+    height: 93vh;
+    width: 100%;
+    background: rgb(255, 255, 255);
+    box-shadow: 0px 4px 24px rgba(0, 0, 0, 0.2);
+    margin-left: auto;
+    .card__title {
+        background: #121212;
+        font-family: 'Raleway', sans-serif;
+        font-style: normal;
+        font-weight: 600;
+        font-size: 14px;
+        line-height: 22px;
+        letter-spacing: 0.06em;
+        text-transform: uppercase;
+        color: #ffffff;
+        padding: 10px 0 10px 24px;
+    }
+    .card__body {
+        padding: 5px 10px;
+    }
+    .card__info {
+        display: flex;
+        margin-top: 20px;
+        img {
+            height: 104px;
+        }
+    }
+    .card__about {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        padding: 12px 0;
+        width: 100%;
+        p {
+            font-family: 'Raleway', sans-serif;
+            font-style: normal;
+            font-weight: 400;
+            font-size: 14px;
+            line-height: 22px;
+            color: #121212;
+            opacity: 0.6;
+        }
+        .card__block-btn {
+            display: flex;
+        }
+        .card__kol {
+            text-align: center;
+            width: 30px;
+            font-style: normal;
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 22px;
+            font-family: 'Raleway', sans-serif;
+            color: #121212;
+        }
+        .card__about-btn {
+            width: 25px;
+            height: 25px;
+            border: none;
+            opacity: 0.5;
+            transition: all.2s ease;
+        }
+        .card__about-btn:hover {
+            opacity: 1;
+        }
+        .card__block {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .delete {
+            background: url(../img/icons/del.svg) center no-repeat;
+            background-size: contain;
+            width: 25px;
+            height: 25px;
+            border: none;
+        }
+        .card__about-price {
+            font-style: normal;
+            font-weight: 700;
+            font-size: 14px;
+            line-height: 22px;
+            font-family: 'Raleway', sans-serif;
+            color: #121212;
+        }
+    }
+    .cartEmpty {
+        font-family: 'Raleway', sans-serif;
+        font-style: normal;
+        font-weight: 600;
+        font-size: 18px;
+        text-align: center;
+        color: #121212;
+        padding: 10px 0;
+    }
+    .card__total {
+        display: flex;
+        justify-content: space-between;
+        margin-top: 20px;
+        p {
+            font-family: 'Raleway', sans-serif;
+            font-style: normal;
+            font-weight: 400;
+            font-size: 14px;
+            line-height: 22px;
+            color: #121212;
+        }
+        span {
+            font-family: 'Raleway', sans-serif;
+            font-style: normal;
+            font-weight: 600;
+            font-size: 16px;
+            line-height: 24px;
+            text-align: right;
+            letter-spacing: 0.06em;
+            text-transform: uppercase;
+            color: #121212;
+        }
+    }
+    h3 {
+        font-family: 'Spartan';
+        font-style: normal;
+        font-weight: 600;
+        font-size: 12px;
+        line-height: 18px;
+        letter-spacing: 0.06em;
+        text-transform: uppercase;
+        color: #121212;
+    }
+    input {
+        background: #F8F8F8;
+        border: none;
+        padding: 10px;
+        margin-top: 10px;
+    }
+    .order__btn {
+        border-radius: 5px;
+        border: none;
+        width: 150px;
+        padding: 10px 25px;
+        margin-top: 20px;
+        cursor: pointer;
+        font-family: 'Spartan';
+        font-size: 13px;
+        letter-spacing: 0.06em;
+        text-transform: uppercase;
+        color: #f3f3f3;
+        opacity: 0.9;
+        background: #121212;
+        transition: all.2s ease-in;
+    }
+    .order__btn:hover {
+        background: #505050;
+    }
+}
+
+.card__checkout {
+    margin-top: 50px;
+    display: flex;
+    flex-direction: column;
+}
