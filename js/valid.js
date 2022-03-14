@@ -9,7 +9,9 @@ function validateEmail(email) {
 
 function mes(selector, message) {
     let elem = document.querySelector(selector);
-    elem.style.borderBottom = '1.5px solid rgb(228, 81, 81)';
+    if (selector !== '.orderEmail') {
+        elem.style.borderBottom = '1.5px solid rgb(228, 81, 81)';  
+    } 
 
     if (document.querySelector('.message')) { document.querySelector('.message').remove(); }
     elem.insertAdjacentHTML('afterend', `<p class='message'>${message}</p>`);
@@ -126,3 +128,23 @@ function getUserCookieFromDB() {
     setCookie("email", get_user_item("email", getCookie("uId")), "/");
     setCookie("phone", get_user_item("phone", getCookie("uId")), "/");
 }
+
+function checkOrderForm() {
+     let res1 = validateEmail($(".orderEmail").val());
+    if (!res1) { mes('.orderEmail', 'Не верный Email'); return false; }
+
+    if (res1) { return true; } else { return false; }
+}
+
+const orderEmail = document.querySelector('.orderEmail');
+orderEmail.addEventListener('click', () => {        
+        if (document.querySelector('.message')) { document.querySelector('.message').remove(); }
+})
+
+
+// function checkOrderForm() { 
+//     let orderEmail = $(".orderEmail").val().toLowerCase();
+// }
+
+const orderBtn = document.querySelector('.order__btn');
+orderBtn.addEventListener('click', checkOrderForm);

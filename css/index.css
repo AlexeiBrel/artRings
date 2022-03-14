@@ -177,10 +177,11 @@
   color: #121212;
 }
 
-.card__content input {
+.card__content .orderEmail {
   background: #F8F8F8;
   border: none;
   padding: 10px;
+  width: 100%;
   margin-top: 10px;
 }
 
@@ -905,6 +906,7 @@
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  margin-right: 10px;
 }
 
 .main .product .product__content .counter-wrapper .items__control {
@@ -935,7 +937,8 @@
   text-decoration: none;
   color: #000000;
   font-size: 12px;
-  width: 120px;
+  max-width: 120px;
+  width: 100%;
   height: 35px;
   border: 2px solid #000000;
   -webkit-transition: .3s ease-in-out;
@@ -1004,9 +1007,9 @@
   .main .product .product__content .product__block {
     display: -ms-grid;
     display: grid;
-    -ms-grid-columns: (minmax(180px, 1fr))[auto-fill];
-        grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
-    gap: 5px;
+    -ms-grid-columns: (minmax(200px, 1fr))[auto-fill];
+        grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 15px;
     padding: 0 10px;
   }
   .main .product .product__content .product-wrap {
