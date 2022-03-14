@@ -1,5 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Raleway&family=Spartan:wght@400;500&display=swap');
 @import "_modal.scss";
+@import '_cart.scss';
+.none {
+    display: none;
+}
+
 .wrapper {
     display: flex;
     flex-direction: column;
@@ -213,61 +218,6 @@
     margin: 20px 0;
     color: #4d4d4d;
     letter-spacing: 1px;
-}
-
-.main .main__hero .main__ask {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding: 10px 20px;
-}
-
-.main .main__hero .main__ask textarea {
-    height: 100px;
-    border: none;
-    border-radius: 12px;
-    width: 100%;
-    margin-top: 10px;
-    padding: 5px 10px;
-    resize: none;
-    font-size: 18px;
-}
-
-.main .main__hero .main__ask .ask__btn {
-    line-height: 1.1;
-    letter-spacing: 1px;
-    font-weight: 700;
-    text-align: center;
-    position: relative;
-    display: inline-block;
-    vertical-align: top;
-    border-radius: 8px;
-    cursor: pointer;
-    text-decoration: none;
-    color: #fff;
-    background-color: #cb11ab;
-    border: 2px solid #cb11ab;
-    font-size: 18px;
-    padding: 7px 15px;
-    width: 100%;
-    -webkit-transition: all 0.22s ease-in-out;
-    transition: all 0.22s ease-in-out;
-    margin-top: 25px;
-}
-
-.main .main__hero .main__ask .ask__btn:hover {
-    background-color: #cb11aca2;
-    border: 2px solid #cb11aca2;
-}
-
-.main .main__hero .main__ask h2 {
-    font-size: 26px;
-    line-height: 28px;
-    font-weight: 400;
-    color: rgb(66, 66, 66);
-    letter-spacing: 1.5px;
-    font-weight: 700;
-    margin: 0;
 }
 
 @import "_footer.scss";

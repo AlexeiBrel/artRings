@@ -154,6 +154,232 @@
   background: #074983;
 }
 
+.card__content {
+  max-width: 388px;
+  height: 93vh;
+  width: 100%;
+  background: white;
+  -webkit-box-shadow: 0px 4px 24px rgba(0, 0, 0, 0.2);
+          box-shadow: 0px 4px 24px rgba(0, 0, 0, 0.2);
+  position: absolute;
+  top: -100%;
+  right: 0;
+  -webkit-transition: all 0.5s ease-in;
+  transition: all 0.5s ease-in;
+  z-index: 5;
+}
+
+.card__content .card__title {
+  background: #121212;
+  font-family: 'Raleway', sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 22px;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: #ffffff;
+  padding: 10px 0 10px 24px;
+}
+
+.card__content .card__body {
+  padding: 5px 10px;
+}
+
+.card__content .card__info {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-top: 20px;
+}
+
+.card__content .card__info img {
+  height: 104px;
+}
+
+.card__content .card__about {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 12px 0;
+  width: 100%;
+}
+
+.card__content .card__about p {
+  font-family: 'Raleway', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 22px;
+  color: #121212;
+  opacity: 0.6;
+}
+
+.card__content .card__about .card__block-btn {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.card__content .card__about .card__kol {
+  text-align: center;
+  width: 30px;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 22px;
+  font-family: 'Raleway', sans-serif;
+  color: #121212;
+}
+
+.card__content .card__about .card__about-btn {
+  width: 25px;
+  height: 25px;
+  border: none;
+  opacity: 0.5;
+  -webkit-transition: all 0.2s ease;
+  transition: all 0.2s ease;
+}
+
+.card__content .card__about .card__about-btn:hover {
+  opacity: 1;
+}
+
+.card__content .card__about .card__block {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.card__content .card__about .delete {
+  background: url(../img/icons/del.svg) center no-repeat;
+  background-size: contain;
+  width: 25px;
+  height: 25px;
+  border: none;
+}
+
+.card__content .card__about .card__about-price {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 22px;
+  font-family: 'Raleway', sans-serif;
+  color: #121212;
+}
+
+.card__content .cartEmpty {
+  font-family: 'Raleway', sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 18px;
+  text-align: center;
+  color: #121212;
+  padding: 10px 0;
+}
+
+.card__content .card__total {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-top: 20px;
+}
+
+.card__content .card__total p {
+  font-family: 'Raleway', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 22px;
+  color: #121212;
+}
+
+.card__content .card__total span {
+  font-family: 'Raleway', sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 24px;
+  text-align: right;
+  letter-spacing: 0.06em;
+  color: #121212;
+}
+
+.card__content h3 {
+  font-family: 'Spartan';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 18px;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: #121212;
+}
+
+.card__content input {
+  background: #F8F8F8;
+  border: none;
+  padding: 10px;
+  margin-top: 10px;
+}
+
+.card__content .order__btn {
+  border-radius: 5px;
+  border: none;
+  width: 150px;
+  padding: 10px 25px;
+  margin-top: 20px;
+  cursor: pointer;
+  font-family: 'Spartan';
+  font-size: 13px;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: #f3f3f3;
+  opacity: 0.9;
+  background: #121212;
+  -webkit-transition: all 0.2s ease-in;
+  transition: all 0.2s ease-in;
+}
+
+.card__content .order__btn:hover {
+  background: #505050;
+}
+
+.card__content.active {
+  top: 0;
+}
+
+.card__checkout {
+  margin-top: 50px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.none {
+  display: none;
+}
+
 .wrapper {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -582,68 +808,6 @@
   margin: 20px 0;
   color: #4d4d4d;
   letter-spacing: 1px;
-}
-
-.main .main__hero .main__ask {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  padding: 10px 20px;
-}
-
-.main .main__hero .main__ask textarea {
-  height: 100px;
-  border: none;
-  border-radius: 12px;
-  width: 100%;
-  margin-top: 10px;
-  padding: 5px 10px;
-  resize: none;
-  font-size: 18px;
-}
-
-.main .main__hero .main__ask .ask__btn {
-  line-height: 1.1;
-  letter-spacing: 1px;
-  font-weight: 700;
-  text-align: center;
-  position: relative;
-  display: inline-block;
-  vertical-align: top;
-  border-radius: 8px;
-  cursor: pointer;
-  text-decoration: none;
-  color: #fff;
-  background-color: #cb11ab;
-  border: 2px solid #cb11ab;
-  font-size: 18px;
-  padding: 7px 15px;
-  width: 100%;
-  -webkit-transition: all 0.22s ease-in-out;
-  transition: all 0.22s ease-in-out;
-  margin-top: 25px;
-}
-
-.main .main__hero .main__ask .ask__btn:hover {
-  background-color: #cb11aca2;
-  border: 2px solid #cb11aca2;
-}
-
-.main .main__hero .main__ask h2 {
-  font-size: 26px;
-  line-height: 28px;
-  font-weight: 400;
-  color: #424242;
-  letter-spacing: 1.5px;
-  font-weight: 700;
-  margin: 0;
 }
 
 .footer {

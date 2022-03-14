@@ -78,7 +78,7 @@ class Products {
                  </div>
                  <div class="product-title">
                      <a href="#" class='item-title'>${title}</a>
-                     <span class="product-price">${price}</span> <span>руб</span>
+                     <span class="product-price">${price}</span> <span class='product__currency'>руб</span>
                  </div>
                  <div class='product__footer'>
                       <div class="items counter-wrapper">
@@ -87,7 +87,7 @@ class Products {
 								      	<button class="items__control" data-action="plus">+</button>
 								      </div>
                       <div class="product-buttons">
-                         <a href="#" class="button" data-cart>В корзину</a>
+                         <button type='button' class="button" data-cart>В корзину</button>
                       </div>
                   </div> 
              </div>

@@ -34,12 +34,11 @@
                 </div>
                 <div class="header__button">
                     <a href="##" class="user"></a>
-                    <a href="##" class="cart"></a>
+                    <!-- <a href="##" class="cart"></a> -->
                 </div>
             </div>
         </header>
         <main class="main">
-
             <section class="main__hero">
                 <div class="hero__block">
                     <div class="main__about about">
@@ -68,11 +67,6 @@
                     <div class="main__purchases about">
                         <h2>Покупки</h2>
                         <p><span>0</span> товаров</p>
-                    </div>
-                    <div class="main__ask about">
-                        <h2>Задать вопрос</h2>
-                        <textarea name="" id="" cols="30" rows="10" placeholder="Введите сообщение"></textarea>
-                        <button class="ask__btn" type="button">Отправить</button>
                     </div>
                     <div class="change__pwd about">
                         <div class="change__block">
@@ -121,7 +115,14 @@
             </div>
         </footer>
     </div>
+    <script src="js/jquery.min.js"></script>
     <script src="plagins/modal.js"></script>
+    <script>
+        const user = document.querySelector('.user');
+        user.addEventListener('click', () => {
+            window.location.href = 'index.html';
+        })
+    </script>
 </body>
 
 </html>

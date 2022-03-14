@@ -1,9 +1,8 @@
 function calcCartPriceAndDelivery() {
-	const cartWrapper = document.querySelector('.cart-wrapper');
-	const priceElements = cartWrapper.querySelectorAll('.product-price');
+	const cardWrapper = document.querySelector('.card-wrapper');
+	const priceElements = cardWrapper.querySelectorAll('.card__info');
 	const totalPriceEl = document.querySelector('.total-price');
-	const deliveryCost = document.querySelector('.delivery-cost');
-	const cartDelivery = document.querySelector('[data-cart-delivery]');
+
 
 	// Общая стоимость товаров
 	let priceTotal = 0;
@@ -11,27 +10,16 @@ function calcCartPriceAndDelivery() {
 	// Обходим все блоки с ценами в корзине
 	priceElements.forEach(function (item) {
 		// Находим количество товара
-		const amountEl = item.closest('.card__info').querySelector('[data-counter]');
+		const amountEl = item.querySelector('[data-counter]');
+		const priceEl = item.querySelector('.card__about-price');
+
+		const currentPrice = parseInt(priceEl.innerText) * parseInt(amountEl.innerText);
 		// Добавляем стоимость товара в общую стоимость (кол-во * цену)
-		priceTotal += parseInt(item.innerText) * parseInt(amountEl.innerText);
+		priceTotal += currentPrice;
 	});
 
+
+	console.log(priceTotal);
 	// Отображаем цену на странице
 	totalPriceEl.innerText = priceTotal;
-
-	// Скрываем / Показываем блок со стоимостью доставки
-	if (priceTotal > 0) {
-		cartDelivery.classList.remove('none');
-	} else {
-		cartDelivery.classList.add('none');
-	}
-
-	// Указываем стоимость доставки
-	if (priceTotal >= 600) {
-		deliveryCost.classList.add('free');
-		deliveryCost.innerText = 'бесплатно';
-	} else {
-		deliveryCost.classList.remove('free');
-		deliveryCost.innerText = '250 ₽';
-	}
 }

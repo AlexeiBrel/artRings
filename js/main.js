@@ -30,3 +30,8 @@ $('.auto__form').on('click', (e) => {
 $('.reg__form').on('click', (e) => {
     closeForm('.reg__body', '.reg__form', e);
 })
+
+
+$('.cart').on('click', () => {
+    $('.card__content').toggleClass('active');
+})

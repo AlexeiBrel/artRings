@@ -24,7 +24,7 @@ window.addEventListener('click', function (event) {
 		if (parseInt(counter.innerText) > 1) {
 			// Изменяем текст в счетчике уменьшая его на 1
 			counter.innerText = --counter.innerText;
-		} else if (event.target.closest('.cart-wrapper') && parseInt(counter.innerText) === 1) {
+		} else if (event.target.closest('.card-wrapper') && parseInt(counter.innerText) === 1) {
 			// Проверка на товар который находится в корзине
 			console.log('IN CART!!!!');
 			// Удаляем товар из корзины
@@ -40,8 +40,9 @@ window.addEventListener('click', function (event) {
 	}
 
 	// Проверяем клик на + или - внутри коризины
-	if (event.target.hasAttribute('data-action') && event.target.closest('.cart-wrapper')) {
+	if (event.target.hasAttribute('data-action') && event.target.closest('.card-wrapper')) {
 		// Пересчет общей стоимости товаров в корзине
+		console.log('22');
 		calcCartPriceAndDelivery();
 	}
 });
